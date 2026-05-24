@@ -1,0 +1,71 @@
+# ===================================
+# Virtual Environment (Render creates its own)
+# ===================================
+env/
+venv/
+ENV/
+.venv/
+
+# ===================================
+# Environment Variables (Set in Render Dashboard)
+# ===================================
+.env
+.env.local
+.env.production
+.env.development
+
+# ===================================
+# Python Cache (Not needed for deployment)
+# ===================================
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# ===================================
+# IDE Files (Personal, not needed)
+# ===================================
+.vscode/
+.idea/
+*.iml
+.sublime-*
+.DS_Store
+Thumbs.db
+
+# ===================================
+# Logs (Generated at runtime)
+# ===================================
+*.log
+logs/
+uvicorn.log
+
+# ===================================
+# Local Database (Not used in production)
+# ===================================
+*.db
+*.sqlite
+*.sqlite3
+
+# ===================================
+# Testing & Coverage (Not needed for deployment)
+# ===================================
+.pytest_cache/
+.tox/
+.coverage
+htmlcov/
+.mypy_cache/
+
+# ===================================
+# Build Artifacts
+# ===================================
+*.egg-info/
+dist/
+build/
+
+# ===================================
+# Alembic cache (keep the migration files, ignore cache)
+# ===================================
+alembic/versions/__pycache__/
+alembic/__pycache__/
