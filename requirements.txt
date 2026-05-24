@@ -1,0 +1,22 @@
+# Core Web Framework
+fastapi==0.115.0
+uvicorn[standard]==0.30.0
+
+# Database
+sqlalchemy==2.0.35
+pymysql==1.1.0
+alembic==1.13.0
+
+# Environment & Config
+python-dotenv==1.0.0
+
+# Authentication & Security
+passlib[bcrypt]==1.7.4
+python-jose[cryptography]==3.3.0
+python-multipart==0.0.9
+email-validator==2.1.0
+
+
+
+# Production Database (for Render)
+psycopg2-binary==2.9.9  # Only if you switch to PostgreSQL on Render
