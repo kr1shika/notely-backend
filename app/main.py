@@ -10,11 +10,11 @@ app = FastAPI(title="Notely API", version="1.0.0")
 # CORS middleware (allows React frontend to connect)
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:3000"],
+    allow_origins=["http://localhost:5173", "http://localhost:3000", "https://notely-ruby.vercel.app/"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
-)
+    )
 
 # Include routers
 app.include_router(users.router)
