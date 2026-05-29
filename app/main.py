@@ -46,10 +46,13 @@ origins = [
     "http://localhost:5173",
     "https://notely-3ua1yxto7-chani-projects.vercel.app",
 ]
-
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins,
+    allow_origins=[
+        "http://localhost:5173",
+        "https://notely-ruby.vercel.app",
+    ],
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
